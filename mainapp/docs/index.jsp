@@ -1,0 +1,1 @@
+Hey there...<%= new java.util.Date() %>

@@ -1,0 +1,6 @@
+apache-ant-1.10.14
+jetty-home-10.0.17
+jettybase
+*.gz
+*.class
+*.jar

@@ -1,0 +1,19 @@
+{
+    "java.project.referencedLibraries": [
+        "mainapp/lib/**/*.jar",
+        "mainapp/libservlet/**/*.jar",
+    ],
+    "java.project.sourcePaths": [
+        "mainapp/src"
+    ],
+    "java.project.outputPath": "mainapp/classes",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "*.gz": true
+    }
+}
