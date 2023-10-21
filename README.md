@@ -10,10 +10,10 @@ less than `4.0` and JDK 11. Web app packing using Ant. The reason using Ant is
 because it is simple and easily work in offline environment.
 
 ## Preparation
-This demo run tested in Linux. Before try the example, run
+This demo tested in Linux. Before trying the example, run the `download.sh`
 
 ```bash
-## Assumpe you clone at ~/lightweb
+## Assumee you clone at ~/lightweb
 cd ~/lightweb
 ./download.sh
 ```
@@ -35,7 +35,7 @@ java -jar $JETTY_HOME/start.jar
 
 Regarding TLS Config, can refer to this
 
-https://eclipse.dev/jetty/documentation/jetty-9/index.php#configuring-sslcontextfactory-cipherSuites
+https://eclipse.dev/jetty/documentation/jetty-10/operations-guide/index.html#og-protocols-ssl
 
 
 ## Build App with Ant
@@ -106,4 +106,12 @@ build.xml, based on example from O'Reilly.
 Build command
 ```bash
 ~/lightweb/apache-ant-1.10.14/bin/ant war
+# The output will be generated at jettybase/webapp
+# If jetty is running, it will automatically detect and reload the app
+```
+
+## Quick performance test
+
+```bash
+ab -n 10000 -c 100 http://localhost:28080/demo/hello
 ```
